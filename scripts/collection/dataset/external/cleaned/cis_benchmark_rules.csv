@@ -1,0 +1,8 @@
+rule_id,category,severity,title,parameter,expected_value,check_command,remediation
+CIS-5.2.1,SSH,HIGH,Ensure permissions on /etc/ssh/sshd_config are configured,file_permissions,600,stat /etc/ssh/sshd_config,chown root:root /etc/ssh/sshd_config && chmod 600 /etc/ssh/sshd_config
+CIS-5.2.4,SSH,HIGH,Ensure SSH Protocol is set to 2,Protocol,2,"grep ""^Protocol"" /etc/ssh/sshd_config",Edit /etc/ssh/sshd_config and set Protocol 2
+CIS-5.2.8,SSH,CRITICAL,Ensure SSH root login is disabled,PermitRootLogin,no,"grep ""^PermitRootLogin"" /etc/ssh/sshd_config",Edit /etc/ssh/sshd_config and set PermitRootLogin no
+CIS-5.2.9,SSH,CRITICAL,Ensure SSH PermitEmptyPasswords is disabled,PermitEmptyPasswords,no,"grep ""^PermitEmptyPasswords"" /etc/ssh/sshd_config",Edit /etc/ssh/sshd_config and set PermitEmptyPasswords no
+CIS-5.2.10,SSH,HIGH,Ensure SSH PasswordAuthentication is disabled,PasswordAuthentication,no,"grep ""^PasswordAuthentication"" /etc/ssh/sshd_config",Edit /etc/ssh/sshd_config and set PasswordAuthentication no
+CIS-6.1.2,FILE_PERM,HIGH,Ensure permissions on /etc/passwd are configured,file_permissions,644,stat /etc/passwd,chmod 644 /etc/passwd
+CIS-6.1.3,FILE_PERM,CRITICAL,Ensure permissions on /etc/shadow are configured,file_permissions,640,stat /etc/shadow,chmod 640 /etc/shadow

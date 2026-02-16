@@ -1,0 +1,122 @@
+[
+  {
+    "config_id": "SSH-0001",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes"
+    },
+    "timestamp": "2026-02-11",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Password auth for root",
+      "Empty passwords allowed"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0002",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no"
+    },
+    "timestamp": "2026-02-12",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Password auth for root"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0003",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes"
+    },
+    "timestamp": "2026-02-02",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Empty passwords allowed"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0004",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no"
+    },
+    "timestamp": "2026-02-01",
+    "vulnerabilities": [
+      "Root login enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0005",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes"
+    },
+    "timestamp": "2026-02-25",
+    "vulnerabilities": [
+      "Empty passwords allowed"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0006",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no"
+    },
+    "timestamp": "2026-02-26",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0007",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes"
+    },
+    "timestamp": "2026-02-14",
+    "vulnerabilities": [
+      "Empty passwords allowed"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0008",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no"
+    },
+    "timestamp": "2026-02-20",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  }
+]
