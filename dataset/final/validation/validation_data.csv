@@ -1,0 +1,6 @@
+config_id,category,parameter,expected_value,actual_value,is_compliant,is_vulnerable,severity,cis_reference,timestamp,feature_network_exposed,feature_affects_auth,feature_critical_file,feature_root_access,feature_weak_auth
+SSH-0004,SSH,PasswordAuthentication,no,no,True,False,NONE,CIS-5.2.10,2026-02-05,1,1,0,0,0
+SSH-0007,SSH,PasswordAuthentication,no,no,True,False,NONE,CIS-5.2.10,2026-02-03,1,1,0,0,0
+PERM-0002,FILE_PERMISSIONS,/etc/passwd,644,666,False,True,CRITICAL,CIS-6.1.2,2026-02-05,0,0,0,0,0
+SSH-0005,SSH,PasswordAuthentication,no,yes,False,True,HIGH,CIS-5.2.10,2026-02-16,1,1,0,0,1
+PERM-0006,FILE_PERMISSIONS,/etc/shadow,640,777,False,True,CRITICAL,CIS-6.1.3,2026-02-21,0,0,1,0,0

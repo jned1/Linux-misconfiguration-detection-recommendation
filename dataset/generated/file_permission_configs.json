@@ -1,0 +1,76 @@
+[
+  {
+    "config_id": "PERM-0001",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/passwd",
+    "actual_permissions": "644",
+    "expected_permissions": "644",
+    "is_vulnerable": false,
+    "timestamp": "2026-02-06",
+    "severity": "NONE",
+    "vulnerabilities": []
+  },
+  {
+    "config_id": "PERM-0002",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/passwd",
+    "actual_permissions": "666",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "timestamp": "2026-02-05",
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World readable/writable"
+    ]
+  },
+  {
+    "config_id": "PERM-0003",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/passwd",
+    "actual_permissions": "777",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "timestamp": "2026-02-07",
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World readable/writable"
+    ]
+  },
+  {
+    "config_id": "PERM-0004",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/shadow",
+    "actual_permissions": "640",
+    "expected_permissions": "640",
+    "is_vulnerable": false,
+    "timestamp": "2026-02-27",
+    "severity": "NONE",
+    "vulnerabilities": []
+  },
+  {
+    "config_id": "PERM-0005",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/shadow",
+    "actual_permissions": "644",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "timestamp": "2026-02-03",
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ]
+  },
+  {
+    "config_id": "PERM-0006",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/shadow",
+    "actual_permissions": "777",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "timestamp": "2026-02-21",
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World readable/writable"
+    ]
+  }
+]
