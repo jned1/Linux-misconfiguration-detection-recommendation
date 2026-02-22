@@ -2,8 +2,8 @@
 ## Complete Project Documentation
 
 **Project Name:** Linux Security Misconfiguration Detection and Recommendation System  
-**Team Members:** [Your Names]  
-**Institution:** [Your Institution]  
+**Team Members:** [jaffar jned , mahmoud bakir ]  
+**Institution:** [Sharda university ]  
 **Year:** 3rd Year IT  
 **Date Started:** February 2026  
 **Project Type:** PBL (Project-Based Learning)
