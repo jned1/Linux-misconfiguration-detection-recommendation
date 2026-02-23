@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Dataset (raw large files)
+dataset/raw/
+dataset/external/
+
+# OS
+.DS_Store
