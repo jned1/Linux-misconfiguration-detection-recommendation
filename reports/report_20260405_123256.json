@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "hostname": "localhost",
+    "scan_time": "2026-04-05 12:32:56",
+    "total_checks": 8,
+    "vulnerable": 4,
+    "compliant": 4,
+    "severity_summary": {
+      "CRITICAL": 4,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 0
+    },
+    "generated_by": "Linux Security Misconfiguration Detection System v1.0"
+  },
+  "findings": [
+    {
+      "rule_id": "CIS-5.2.8",
+      "category": "SSH",
+      "parameter": "PermitRootLogin",
+      "description": "SSH root login must be disabled",
+      "expected_value": "no",
+      "actual_value": "NOT_SET",
+      "is_compliant": false,
+      "is_vulnerable": true,
+      "rule_severity": "CRITICAL",
+      "ml_severity": "CRITICAL",
+      "final_severity": "CRITICAL",
+      "recommendation": "Set 'PermitRootLogin no' in /etc/ssh/sshd_config, then: systemctl restart sshd",
+      "confidence": {
+        "CRITICAL": 0.945,
+        "HIGH": 0.0,
+        "MEDIUM": 0.0,
+        "NONE": 0.055
+      }
+    },
+    {
+      "rule_id": "CIS-5.2.9",
+      "category": "SSH",
+      "parameter": "PermitEmptyPasswords",
+      "description": "SSH empty passwords must be disabled",
+      "expected_value": "no",
+      "actual_value": "NOT_SET",
+      "is_compliant": false,
+      "is_vulnerable": true,
+      "rule_severity": "CRITICAL",
+      "ml_severity": "CRITICAL",
+      "final_severity": "CRITICAL",
+      "recommendation": "Set 'PermitEmptyPasswords no' in /etc/ssh/sshd_config, then: systemctl restart sshd",
+      "confidence": {
+        "CRITICAL": 0.8597,
+        "HIGH": 0.1403,
+        "MEDIUM": 0.0,
+        "NONE": 0.0
+      }
+    },
+    {
+      "rule_id": "CIS-5.2.10",
+      "category": "SSH",
+      "parameter": "PasswordAuthentication",
+      "description": "SSH password authentication should be disabled (use keys)",
+      "expected_value": "no",
+      "actual_value": "NOT_SET",
+      "is_compliant": false,
+      "is_vulnerable": true,
+      "rule_severity": "HIGH",
+      "ml_severity": "CRITICAL",
+      "final_severity": "CRITICAL",
+      "recommendation": "Set 'PasswordAuthentication no' in /etc/ssh/sshd_config. Ensure you have key-based access first.",
+      "confidence": {
+        "CRITICAL": 0.8597,
+        "HIGH": 0.1403,
+        "MEDIUM": 0.0,
+        "NONE": 0.0
+      }
+    },
+    {
+      "rule_id": "CIS-5.2.4",
+      "category": "SSH",
+      "parameter": "Protocol",
+      "description": "SSH must use Protocol 2 only",
+      "expected_value": "2",
+      "actual_value": "NOT_SET",
+      "is_compliant": false,
+      "is_vulnerable": true,
+      "rule_severity": "CRITICAL",
+      "ml_severity": "NONE",
+      "final_severity": "CRITICAL",
+      "recommendation": "Set 'Protocol 2' in /etc/ssh/sshd_config, then: systemctl restart sshd",
+      "confidence": {
+        "CRITICAL": 0.0672,
+        "HIGH": 0.2278,
+        "MEDIUM": 0.1949,
+        "NONE": 0.51
+      }
+    }
+  ],
+  "compliant_checks": [
+    {
+      "rule_id": "CIS-5.2.1",
+      "category": "SSH",
+      "description": "SSH config file should not be world-writable"
+    },
+    {
+      "rule_id": "CIS-6.1.2",
+      "category": "FILE_PERMISSIONS",
+      "description": "/etc/passwd must be 644"
+    },
+    {
+      "rule_id": "CIS-6.1.3",
+      "category": "FILE_PERMISSIONS",
+      "description": "/etc/shadow must be 640 or stricter"
+    },
+    {
+      "rule_id": "CIS-6.1.4",
+      "category": "FILE_PERMISSIONS",
+      "description": "/etc/group must be 644"
+    }
+  ]
+}
