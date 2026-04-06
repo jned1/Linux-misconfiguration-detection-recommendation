@@ -17,7 +17,7 @@
     "actual_permissions": "666",
     "expected_permissions": "644",
     "is_vulnerable": true,
-    "timestamp": "2026-02-05",
+    "timestamp": "2026-02-24",
     "severity": "CRITICAL",
     "vulnerabilities": [
       "World readable/writable"
@@ -30,7 +30,7 @@
     "actual_permissions": "777",
     "expected_permissions": "644",
     "is_vulnerable": true,
-    "timestamp": "2026-02-07",
+    "timestamp": "2026-02-19",
     "severity": "CRITICAL",
     "vulnerabilities": [
       "World readable/writable"
@@ -43,7 +43,7 @@
     "actual_permissions": "640",
     "expected_permissions": "640",
     "is_vulnerable": false,
-    "timestamp": "2026-02-27",
+    "timestamp": "2026-02-05",
     "severity": "NONE",
     "vulnerabilities": []
   },
@@ -54,7 +54,7 @@
     "actual_permissions": "644",
     "expected_permissions": "640",
     "is_vulnerable": true,
-    "timestamp": "2026-02-03",
+    "timestamp": "2026-02-19",
     "severity": "HIGH",
     "vulnerabilities": [
       "Incorrect permissions"
@@ -67,7 +67,7 @@
     "actual_permissions": "777",
     "expected_permissions": "640",
     "is_vulnerable": true,
-    "timestamp": "2026-02-21",
+    "timestamp": "2026-02-13",
     "severity": "CRITICAL",
     "vulnerabilities": [
       "World readable/writable"

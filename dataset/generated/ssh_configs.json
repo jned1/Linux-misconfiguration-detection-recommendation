@@ -7,7 +7,7 @@
       "PasswordAuthentication": "yes",
       "PermitEmptyPasswords": "yes"
     },
-    "timestamp": "2026-02-22",
+    "timestamp": "2026-02-10",
     "vulnerabilities": [
       "Root login enabled",
       "Password auth for root",
@@ -24,7 +24,7 @@
       "PasswordAuthentication": "yes",
       "PermitEmptyPasswords": "no"
     },
-    "timestamp": "2026-02-13",
+    "timestamp": "2026-02-27",
     "vulnerabilities": [
       "Root login enabled",
       "Password auth for root"
@@ -40,7 +40,7 @@
       "PasswordAuthentication": "no",
       "PermitEmptyPasswords": "yes"
     },
-    "timestamp": "2026-02-09",
+    "timestamp": "2026-02-22",
     "vulnerabilities": [
       "Root login enabled",
       "Empty passwords allowed"
@@ -56,7 +56,7 @@
       "PasswordAuthentication": "no",
       "PermitEmptyPasswords": "no"
     },
-    "timestamp": "2026-02-05",
+    "timestamp": "2026-02-18",
     "vulnerabilities": [
       "Root login enabled"
     ],
@@ -71,7 +71,7 @@
       "PasswordAuthentication": "yes",
       "PermitEmptyPasswords": "yes"
     },
-    "timestamp": "2026-02-16",
+    "timestamp": "2026-02-27",
     "vulnerabilities": [
       "Empty passwords allowed"
     ],
@@ -86,7 +86,7 @@
       "PasswordAuthentication": "yes",
       "PermitEmptyPasswords": "no"
     },
-    "timestamp": "2026-02-26",
+    "timestamp": "2026-02-09",
     "vulnerabilities": [],
     "severity": "NONE",
     "is_vulnerable": false
@@ -99,7 +99,7 @@
       "PasswordAuthentication": "no",
       "PermitEmptyPasswords": "yes"
     },
-    "timestamp": "2026-02-03",
+    "timestamp": "2026-02-23",
     "vulnerabilities": [
       "Empty passwords allowed"
     ],
@@ -114,7 +114,7 @@
       "PasswordAuthentication": "no",
       "PermitEmptyPasswords": "no"
     },
-    "timestamp": "2026-02-07",
+    "timestamp": "2026-02-27",
     "vulnerabilities": [],
     "severity": "NONE",
     "is_vulnerable": false

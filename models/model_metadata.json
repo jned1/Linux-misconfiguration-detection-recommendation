@@ -16,15 +16,14 @@
     "MEDIUM",
     "NONE"
   ],
-  "train_samples": 264,
-  "val_accuracy": 0.9474,
-  "val_f1_weighted": 0.936,
-  "test_accuracy": 0.9825,
-  "test_f1_weighted": 0.9841,
+  "train_samples": 20,
+  "val_accuracy": 0.6,
+  "val_f1_weighted": 0.4667,
+  "test_accuracy": 0.6,
+  "test_f1_weighted": 0.5867,
   "class_weights": {
-    "CRITICAL": 9.4286,
-    "HIGH": 0.2705,
-    "MEDIUM": 22.0,
-    "NONE": 6.6
+    "CRITICAL": 0.9524,
+    "HIGH": 2.2222,
+    "NONE": 0.6667
   }
 }
