@@ -1,0 +1,15 @@
+{
+  "hostname": "demo-server",
+  "ssh": {
+    "PermitRootLogin": "yes",
+    "PasswordAuthentication": "yes",
+    "PermitEmptyPasswords": "no",
+    "Protocol": "2"
+  },
+  "file_permissions": {
+    "/etc/passwd": "644",
+    "/etc/shadow": "777",
+    "/etc/group": "644",
+    "/etc/ssh/sshd_config": "644"
+  }
+}

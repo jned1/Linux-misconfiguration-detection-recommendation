@@ -1,12 +1,24 @@
 {
   "model_type": "RandomForestClassifier",
-  "n_estimators": 200,
+  "n_estimators": 300,
   "feature_columns": [
     "feature_network_exposed",
     "feature_affects_auth",
     "feature_critical_file",
     "feature_root_access",
-    "feature_weak_auth"
+    "feature_weak_auth",
+    "feature_kernel_hardening",
+    "feature_network_stack",
+    "feature_firewall_weak",
+    "feature_world_writable",
+    "feature_weak_protocol",
+    "feature_is_vulnerable",
+    "feature_high_risk_param",
+    "feature_category_risk",
+    "feature_ssh_risk_score",
+    "feature_perm_risk_score",
+    "feature_pwd_weakness_score",
+    "feature_combined_risk"
   ],
   "target_column": "severity",
   "classes": [
@@ -16,14 +28,16 @@
     "MEDIUM",
     "NONE"
   ],
-  "train_samples": 20,
-  "val_accuracy": 0.6,
-  "val_f1_weighted": 0.4667,
-  "test_accuracy": 0.6,
-  "test_f1_weighted": 0.5867,
+  "train_samples": 410,
+  "val_accuracy": 0.9326,
+  "val_f1_weighted": 0.9319,
+  "test_accuracy": 0.9326,
+  "test_f1_weighted": 0.9317,
   "class_weights": {
-    "CRITICAL": 0.9524,
-    "HIGH": 2.2222,
-    "NONE": 0.6667
+    "CRITICAL": 1.2059,
+    "HIGH": 1.907,
+    "LOW": 1.6735,
+    "MEDIUM": 1.4643,
+    "NONE": 0.4227
   }
 }

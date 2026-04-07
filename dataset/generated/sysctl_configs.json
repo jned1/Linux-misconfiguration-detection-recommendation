@@ -1,0 +1,194 @@
+[
+  {
+    "config_id": "SYSCTL-0001",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.ip_forward": "1"
+    },
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "IP forwarding enabled"
+    ],
+    "timestamp": "2026-11-02"
+  },
+  {
+    "config_id": "SYSCTL-0002",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.ip_forward": "0"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-04-03"
+  },
+  {
+    "config_id": "SYSCTL-0003",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.conf.all.send_redirects": "1"
+    },
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "ICMP redirects enabled"
+    ],
+    "timestamp": "2026-01-28"
+  },
+  {
+    "config_id": "SYSCTL-0004",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.conf.all.send_redirects": "0"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-06-03"
+  },
+  {
+    "config_id": "SYSCTL-0005",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.conf.all.accept_redirects": "1"
+    },
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Accept ICMP redirects"
+    ],
+    "timestamp": "2026-09-08"
+  },
+  {
+    "config_id": "SYSCTL-0006",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.conf.all.accept_redirects": "0"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-05-22"
+  },
+  {
+    "config_id": "SYSCTL-0007",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.conf.all.log_martians": "0"
+    },
+    "is_vulnerable": true,
+    "severity": "LOW",
+    "vulnerabilities": [
+      "Martian packets not logged"
+    ],
+    "timestamp": "2026-08-07"
+  },
+  {
+    "config_id": "SYSCTL-0008",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.conf.all.log_martians": "1"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-09-05"
+  },
+  {
+    "config_id": "SYSCTL-0009",
+    "category": "SYSCTL",
+    "parameters": {
+      "kernel.randomize_va_space": "0"
+    },
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "ASLR disabled"
+    ],
+    "timestamp": "2026-12-19"
+  },
+  {
+    "config_id": "SYSCTL-0010",
+    "category": "SYSCTL",
+    "parameters": {
+      "kernel.randomize_va_space": "2"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-10-16"
+  },
+  {
+    "config_id": "SYSCTL-0011",
+    "category": "SYSCTL",
+    "parameters": {
+      "kernel.core_dumps": "1"
+    },
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Core dumps enabled"
+    ],
+    "timestamp": "2026-04-26"
+  },
+  {
+    "config_id": "SYSCTL-0012",
+    "category": "SYSCTL",
+    "parameters": {
+      "kernel.core_dumps": "0"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-08-26"
+  },
+  {
+    "config_id": "SYSCTL-0013",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.tcp_syncookies": "0"
+    },
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "SYN flood protection off"
+    ],
+    "timestamp": "2026-07-07"
+  },
+  {
+    "config_id": "SYSCTL-0014",
+    "category": "SYSCTL",
+    "parameters": {
+      "net.ipv4.tcp_syncookies": "1"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-02-04"
+  },
+  {
+    "config_id": "SYSCTL-0015",
+    "category": "SYSCTL",
+    "parameters": {
+      "fs.suid_dumpable": "1"
+    },
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "SUID core dumps enabled"
+    ],
+    "timestamp": "2026-11-14"
+  },
+  {
+    "config_id": "SYSCTL-0016",
+    "category": "SYSCTL",
+    "parameters": {
+      "fs.suid_dumpable": "0"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-06-14"
+  }
+]

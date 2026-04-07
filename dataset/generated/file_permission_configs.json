@@ -6,71 +6,627 @@
     "actual_permissions": "644",
     "expected_permissions": "644",
     "is_vulnerable": false,
-    "timestamp": "2026-02-06",
     "severity": "NONE",
-    "vulnerabilities": []
+    "vulnerabilities": [],
+    "timestamp": "2026-08-13"
   },
   {
     "config_id": "PERM-0002",
     "category": "FILE_PERMISSIONS",
     "file": "/etc/passwd",
-    "actual_permissions": "666",
+    "actual_permissions": "646",
     "expected_permissions": "644",
     "is_vulnerable": true,
-    "timestamp": "2026-02-24",
-    "severity": "CRITICAL",
+    "severity": "HIGH",
     "vulnerabilities": [
-      "World readable/writable"
-    ]
+      "Group or other write access"
+    ],
+    "timestamp": "2026-11-15"
   },
   {
     "config_id": "PERM-0003",
     "category": "FILE_PERMISSIONS",
     "file": "/etc/passwd",
-    "actual_permissions": "777",
+    "actual_permissions": "664",
     "expected_permissions": "644",
     "is_vulnerable": true,
-    "timestamp": "2026-02-19",
-    "severity": "CRITICAL",
+    "severity": "HIGH",
     "vulnerabilities": [
-      "World readable/writable"
-    ]
+      "Group or other write access"
+    ],
+    "timestamp": "2026-03-09"
   },
   {
     "config_id": "PERM-0004",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/passwd",
+    "actual_permissions": "666",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-03-08"
+  },
+  {
+    "config_id": "PERM-0005",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/passwd",
+    "actual_permissions": "755",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-12-18"
+  },
+  {
+    "config_id": "PERM-0006",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/passwd",
+    "actual_permissions": "777",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-09-09"
+  },
+  {
+    "config_id": "PERM-0007",
     "category": "FILE_PERMISSIONS",
     "file": "/etc/shadow",
     "actual_permissions": "640",
     "expected_permissions": "640",
     "is_vulnerable": false,
-    "timestamp": "2026-02-05",
     "severity": "NONE",
-    "vulnerabilities": []
+    "vulnerabilities": [],
+    "timestamp": "2026-12-19"
   },
   {
-    "config_id": "PERM-0005",
+    "config_id": "PERM-0008",
     "category": "FILE_PERMISSIONS",
     "file": "/etc/shadow",
     "actual_permissions": "644",
     "expected_permissions": "640",
     "is_vulnerable": true,
-    "timestamp": "2026-02-19",
-    "severity": "HIGH",
+    "severity": "MEDIUM",
     "vulnerabilities": [
       "Incorrect permissions"
-    ]
+    ],
+    "timestamp": "2026-07-19"
   },
   {
-    "config_id": "PERM-0006",
+    "config_id": "PERM-0009",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/shadow",
+    "actual_permissions": "660",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Group or other write access"
+    ],
+    "timestamp": "2026-07-12"
+  },
+  {
+    "config_id": "PERM-0010",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/shadow",
+    "actual_permissions": "666",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-04-05"
+  },
+  {
+    "config_id": "PERM-0011",
     "category": "FILE_PERMISSIONS",
     "file": "/etc/shadow",
     "actual_permissions": "777",
     "expected_permissions": "640",
     "is_vulnerable": true,
-    "timestamp": "2026-02-13",
     "severity": "CRITICAL",
     "vulnerabilities": [
-      "World readable/writable"
-    ]
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-09-16"
+  },
+  {
+    "config_id": "PERM-0012",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/shadow",
+    "actual_permissions": "400",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-02-25"
+  },
+  {
+    "config_id": "PERM-0013",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/group",
+    "actual_permissions": "644",
+    "expected_permissions": "644",
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-01-28"
+  },
+  {
+    "config_id": "PERM-0014",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/group",
+    "actual_permissions": "664",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Group or other write access"
+    ],
+    "timestamp": "2026-02-05"
+  },
+  {
+    "config_id": "PERM-0015",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/group",
+    "actual_permissions": "666",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-11-06"
+  },
+  {
+    "config_id": "PERM-0016",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/group",
+    "actual_permissions": "777",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-11-14"
+  },
+  {
+    "config_id": "PERM-0017",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/gshadow",
+    "actual_permissions": "640",
+    "expected_permissions": "640",
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-10-03"
+  },
+  {
+    "config_id": "PERM-0018",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/gshadow",
+    "actual_permissions": "644",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-07-13"
+  },
+  {
+    "config_id": "PERM-0019",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/gshadow",
+    "actual_permissions": "660",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Group or other write access"
+    ],
+    "timestamp": "2026-10-15"
+  },
+  {
+    "config_id": "PERM-0020",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/gshadow",
+    "actual_permissions": "666",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-09-09"
+  },
+  {
+    "config_id": "PERM-0021",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/gshadow",
+    "actual_permissions": "777",
+    "expected_permissions": "640",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-09-28"
+  },
+  {
+    "config_id": "PERM-0022",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/ssh/sshd_config",
+    "actual_permissions": "600",
+    "expected_permissions": "600",
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-01-22"
+  },
+  {
+    "config_id": "PERM-0023",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/ssh/sshd_config",
+    "actual_permissions": "640",
+    "expected_permissions": "600",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-12-04"
+  },
+  {
+    "config_id": "PERM-0024",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/ssh/sshd_config",
+    "actual_permissions": "644",
+    "expected_permissions": "600",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-11-18"
+  },
+  {
+    "config_id": "PERM-0025",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/ssh/sshd_config",
+    "actual_permissions": "664",
+    "expected_permissions": "600",
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Group or other write access"
+    ],
+    "timestamp": "2026-05-25"
+  },
+  {
+    "config_id": "PERM-0026",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/ssh/sshd_config",
+    "actual_permissions": "666",
+    "expected_permissions": "600",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-11-11"
+  },
+  {
+    "config_id": "PERM-0027",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/ssh/sshd_config",
+    "actual_permissions": "777",
+    "expected_permissions": "600",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-02-10"
+  },
+  {
+    "config_id": "PERM-0028",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/sudoers",
+    "actual_permissions": "440",
+    "expected_permissions": "440",
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-07-06"
+  },
+  {
+    "config_id": "PERM-0029",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/sudoers",
+    "actual_permissions": "444",
+    "expected_permissions": "440",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-08-01"
+  },
+  {
+    "config_id": "PERM-0030",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/sudoers",
+    "actual_permissions": "640",
+    "expected_permissions": "440",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-12-24"
+  },
+  {
+    "config_id": "PERM-0031",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/sudoers",
+    "actual_permissions": "644",
+    "expected_permissions": "440",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-05-17"
+  },
+  {
+    "config_id": "PERM-0032",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/sudoers",
+    "actual_permissions": "660",
+    "expected_permissions": "440",
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Group or other write access"
+    ],
+    "timestamp": "2026-03-17"
+  },
+  {
+    "config_id": "PERM-0033",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/sudoers",
+    "actual_permissions": "666",
+    "expected_permissions": "440",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-02-28"
+  },
+  {
+    "config_id": "PERM-0034",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/sudoers",
+    "actual_permissions": "777",
+    "expected_permissions": "440",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-11-10"
+  },
+  {
+    "config_id": "PERM-0035",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/crontab",
+    "actual_permissions": "644",
+    "expected_permissions": "644",
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-11-17"
+  },
+  {
+    "config_id": "PERM-0036",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/crontab",
+    "actual_permissions": "664",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Group or other write access"
+    ],
+    "timestamp": "2026-10-07"
+  },
+  {
+    "config_id": "PERM-0037",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/crontab",
+    "actual_permissions": "666",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-03-12"
+  },
+  {
+    "config_id": "PERM-0038",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/crontab",
+    "actual_permissions": "777",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-03-18"
+  },
+  {
+    "config_id": "PERM-0039",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/hosts",
+    "actual_permissions": "644",
+    "expected_permissions": "644",
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-09-01"
+  },
+  {
+    "config_id": "PERM-0040",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/hosts",
+    "actual_permissions": "666",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-10-11"
+  },
+  {
+    "config_id": "PERM-0041",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/hosts",
+    "actual_permissions": "777",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-08-01"
+  },
+  {
+    "config_id": "PERM-0042",
+    "category": "FILE_PERMISSIONS",
+    "file": "/boot/grub/grub.cfg",
+    "actual_permissions": "400",
+    "expected_permissions": "400",
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-02-12"
+  },
+  {
+    "config_id": "PERM-0043",
+    "category": "FILE_PERMISSIONS",
+    "file": "/boot/grub/grub.cfg",
+    "actual_permissions": "444",
+    "expected_permissions": "400",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-05-08"
+  },
+  {
+    "config_id": "PERM-0044",
+    "category": "FILE_PERMISSIONS",
+    "file": "/boot/grub/grub.cfg",
+    "actual_permissions": "640",
+    "expected_permissions": "400",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-01-08"
+  },
+  {
+    "config_id": "PERM-0045",
+    "category": "FILE_PERMISSIONS",
+    "file": "/boot/grub/grub.cfg",
+    "actual_permissions": "644",
+    "expected_permissions": "400",
+    "is_vulnerable": true,
+    "severity": "MEDIUM",
+    "vulnerabilities": [
+      "Incorrect permissions"
+    ],
+    "timestamp": "2026-10-03"
+  },
+  {
+    "config_id": "PERM-0046",
+    "category": "FILE_PERMISSIONS",
+    "file": "/boot/grub/grub.cfg",
+    "actual_permissions": "777",
+    "expected_permissions": "400",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-02-24"
+  },
+  {
+    "config_id": "PERM-0047",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/fstab",
+    "actual_permissions": "644",
+    "expected_permissions": "644",
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-08-27"
+  },
+  {
+    "config_id": "PERM-0048",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/fstab",
+    "actual_permissions": "664",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Group or other write access"
+    ],
+    "timestamp": "2026-02-25"
+  },
+  {
+    "config_id": "PERM-0049",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/fstab",
+    "actual_permissions": "666",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-09-25"
+  },
+  {
+    "config_id": "PERM-0050",
+    "category": "FILE_PERMISSIONS",
+    "file": "/etc/fstab",
+    "actual_permissions": "777",
+    "expected_permissions": "644",
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "World writable \u2014 any user can modify"
+    ],
+    "timestamp": "2026-03-05"
   }
 ]

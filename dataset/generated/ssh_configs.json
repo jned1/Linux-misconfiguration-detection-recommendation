@@ -5,13 +5,21 @@
     "parameters": {
       "PermitRootLogin": "yes",
       "PasswordAuthentication": "yes",
-      "PermitEmptyPasswords": "yes"
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22"
     },
-    "timestamp": "2026-02-10",
+    "timestamp": "2026-11-04",
     "vulnerabilities": [
       "Root login enabled",
-      "Password auth for root",
-      "Empty passwords allowed"
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
     ],
     "severity": "CRITICAL",
     "is_vulnerable": true
@@ -22,12 +30,21 @@
     "parameters": {
       "PermitRootLogin": "yes",
       "PasswordAuthentication": "yes",
-      "PermitEmptyPasswords": "no"
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "2222"
     },
-    "timestamp": "2026-02-27",
+    "timestamp": "2026-01-24",
     "vulnerabilities": [
       "Root login enabled",
-      "Password auth for root"
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
     ],
     "severity": "CRITICAL",
     "is_vulnerable": true
@@ -37,13 +54,22 @@
     "category": "SSH",
     "parameters": {
       "PermitRootLogin": "yes",
-      "PasswordAuthentication": "no",
-      "PermitEmptyPasswords": "yes"
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22222"
     },
-    "timestamp": "2026-02-22",
+    "timestamp": "2026-05-08",
     "vulnerabilities": [
       "Root login enabled",
-      "Empty passwords allowed"
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
     ],
     "severity": "CRITICAL",
     "is_vulnerable": true
@@ -53,12 +79,22 @@
     "category": "SSH",
     "parameters": {
       "PermitRootLogin": "yes",
-      "PasswordAuthentication": "no",
-      "PermitEmptyPasswords": "no"
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "8022"
     },
-    "timestamp": "2026-02-18",
+    "timestamp": "2026-04-05",
     "vulnerabilities": [
-      "Root login enabled"
+      "Root login enabled",
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
     ],
     "severity": "CRITICAL",
     "is_vulnerable": true
@@ -67,13 +103,22 @@
     "config_id": "SSH-0005",
     "category": "SSH",
     "parameters": {
-      "PermitRootLogin": "no",
+      "PermitRootLogin": "yes",
       "PasswordAuthentication": "yes",
-      "PermitEmptyPasswords": "yes"
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22"
     },
-    "timestamp": "2026-02-27",
+    "timestamp": "2026-12-04",
     "vulnerabilities": [
-      "Empty passwords allowed"
+      "Root login enabled",
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
     ],
     "severity": "CRITICAL",
     "is_vulnerable": true
@@ -82,26 +127,46 @@
     "config_id": "SSH-0006",
     "category": "SSH",
     "parameters": {
-      "PermitRootLogin": "no",
+      "PermitRootLogin": "yes",
       "PasswordAuthentication": "yes",
-      "PermitEmptyPasswords": "no"
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "2222"
     },
-    "timestamp": "2026-02-09",
-    "vulnerabilities": [],
-    "severity": "NONE",
-    "is_vulnerable": false
+    "timestamp": "2026-11-24",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
   },
   {
     "config_id": "SSH-0007",
     "category": "SSH",
     "parameters": {
-      "PermitRootLogin": "no",
-      "PasswordAuthentication": "no",
-      "PermitEmptyPasswords": "yes"
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22222"
     },
-    "timestamp": "2026-02-23",
+    "timestamp": "2026-09-03",
     "vulnerabilities": [
-      "Empty passwords allowed"
+      "Root login enabled",
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
     ],
     "severity": "CRITICAL",
     "is_vulnerable": true
@@ -110,13 +175,1208 @@
     "config_id": "SSH-0008",
     "category": "SSH",
     "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "8022"
+    },
+    "timestamp": "2026-10-14",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0009",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-01-01",
+    "vulnerabilities": [
+      "Root login enabled",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0010",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-02-07",
+    "vulnerabilities": [
+      "Root login enabled",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0011",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-04-17",
+    "vulnerabilities": [
+      "Root login enabled",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0012",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-10-01",
+    "vulnerabilities": [
+      "Root login enabled",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0013",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-09-07",
+    "vulnerabilities": [
+      "Root login enabled",
+      "High MaxAuthTries (brute-force risk)"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0014",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-12-21",
+    "vulnerabilities": [
+      "Root login enabled",
+      "High MaxAuthTries (brute-force risk)"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0015",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-12-18",
+    "vulnerabilities": [
+      "Root login enabled",
+      "High MaxAuthTries (brute-force risk)"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0016",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-07-08",
+    "vulnerabilities": [
+      "Root login enabled",
+      "High MaxAuthTries (brute-force risk)"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0017",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-08-19",
+    "vulnerabilities": [
+      "Root login enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0018",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-05-26",
+    "vulnerabilities": [
+      "Root login enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0019",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-01-25",
+    "vulnerabilities": [
+      "Root login enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0020",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-03-23",
+    "vulnerabilities": [
+      "Root login enabled"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0021",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22"
+    },
+    "timestamp": "2026-07-11",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0022",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "2222"
+    },
+    "timestamp": "2026-05-05",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0023",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22222"
+    },
+    "timestamp": "2026-04-25",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0024",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "8022"
+    },
+    "timestamp": "2026-06-04",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0025",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-02-13",
+    "vulnerabilities": [
+      "Password authentication enabled",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled"
+    ],
+    "severity": "HIGH",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0026",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-02-12",
+    "vulnerabilities": [
+      "Password authentication enabled",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled"
+    ],
+    "severity": "HIGH",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0027",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-06-20",
+    "vulnerabilities": [
+      "Password authentication enabled",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled"
+    ],
+    "severity": "HIGH",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0028",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-05-26",
+    "vulnerabilities": [
+      "Password authentication enabled",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled"
+    ],
+    "severity": "HIGH",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0029",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-01-24",
+    "vulnerabilities": [
+      "Password authentication enabled"
+    ],
+    "severity": "HIGH",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0030",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-08-18",
+    "vulnerabilities": [
+      "Password authentication enabled"
+    ],
+    "severity": "HIGH",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0031",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-02-13",
+    "vulnerabilities": [
+      "Password authentication enabled"
+    ],
+    "severity": "HIGH",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0032",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-02-18",
+    "vulnerabilities": [
+      "Password authentication enabled"
+    ],
+    "severity": "HIGH",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0033",
+    "category": "SSH",
+    "parameters": {
       "PermitRootLogin": "no",
       "PasswordAuthentication": "no",
-      "PermitEmptyPasswords": "no"
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
     },
-    "timestamp": "2026-02-27",
+    "timestamp": "2026-05-27",
+    "vulnerabilities": [
+      "Default SSH port in use"
+    ],
+    "severity": "LOW",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0034",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-11-20",
     "vulnerabilities": [],
     "severity": "NONE",
     "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0035",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-06-19",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0036",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "4",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-04-23",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0037",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-02-02",
+    "vulnerabilities": [
+      "Default SSH port in use"
+    ],
+    "severity": "LOW",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0038",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-11-08",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0039",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-05-03",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0040",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-04-28",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0041",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "without-password",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-02-13",
+    "vulnerabilities": [
+      "Default SSH port in use"
+    ],
+    "severity": "LOW",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0042",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "without-password",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-05-15",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0043",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "without-password",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-11-27",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0044",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "without-password",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-06-06",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0045",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "forced-commands-only",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-06-12",
+    "vulnerabilities": [
+      "Default SSH port in use"
+    ],
+    "severity": "LOW",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0046",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "forced-commands-only",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-04-22",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0047",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "forced-commands-only",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-05-23",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0048",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "forced-commands-only",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "2",
+      "MaxAuthTries": "3",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-11-21",
+    "vulnerabilities": [],
+    "severity": "NONE",
+    "is_vulnerable": false
+  },
+  {
+    "config_id": "SSH-0049",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22"
+    },
+    "timestamp": "2026-02-20",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0050",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "2222"
+    },
+    "timestamp": "2026-11-06",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0051",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22222"
+    },
+    "timestamp": "2026-09-24",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0052",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "8022"
+    },
+    "timestamp": "2026-04-06",
+    "vulnerabilities": [
+      "Root login enabled",
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0053",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22"
+    },
+    "timestamp": "2026-08-13",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0054",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "2222"
+    },
+    "timestamp": "2026-05-21",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0055",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22222"
+    },
+    "timestamp": "2026-12-18",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0056",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "8022"
+    },
+    "timestamp": "2026-04-22",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0057",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22"
+    },
+    "timestamp": "2026-06-27",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0058",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "2222"
+    },
+    "timestamp": "2026-01-08",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0059",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "22222"
+    },
+    "timestamp": "2026-01-26",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0060",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "no",
+      "PasswordAuthentication": "no",
+      "PermitEmptyPasswords": "yes",
+      "Protocol": "2",
+      "MaxAuthTries": "6",
+      "X11Forwarding": "no",
+      "PermitUserEnvironment": "no",
+      "Port": "8022"
+    },
+    "timestamp": "2026-06-13",
+    "vulnerabilities": [
+      "Empty passwords allowed",
+      "High MaxAuthTries (brute-force risk)"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0061",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22"
+    },
+    "timestamp": "2026-05-03",
+    "vulnerabilities": [
+      "Root login enabled",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0062",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "2222"
+    },
+    "timestamp": "2026-04-19",
+    "vulnerabilities": [
+      "Root login enabled",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0063",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "22222"
+    },
+    "timestamp": "2026-12-11",
+    "vulnerabilities": [
+      "Root login enabled",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
+  },
+  {
+    "config_id": "SSH-0064",
+    "category": "SSH",
+    "parameters": {
+      "PermitRootLogin": "yes",
+      "PasswordAuthentication": "yes",
+      "PermitEmptyPasswords": "no",
+      "Protocol": "1",
+      "MaxAuthTries": "10",
+      "X11Forwarding": "yes",
+      "PermitUserEnvironment": "yes",
+      "Port": "8022"
+    },
+    "timestamp": "2026-04-21",
+    "vulnerabilities": [
+      "Root login enabled",
+      "SSHv1 enabled (weak protocol)",
+      "High MaxAuthTries (brute-force risk)",
+      "X11 forwarding enabled",
+      "User environment variables permitted"
+    ],
+    "severity": "CRITICAL",
+    "is_vulnerable": true
   }
 ]

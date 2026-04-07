@@ -1,0 +1,134 @@
+[
+  {
+    "config_id": "FW-0001",
+    "category": "FIREWALL",
+    "parameters": {
+      "enabled": "no",
+      "default_policy": "ACCEPT",
+      "logging": "no",
+      "open_ports": "22,80,443,8080,3306,5432"
+    },
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "Firewall disabled",
+      "Default ACCEPT policy (allow all)",
+      "Database port exposed publicly"
+    ],
+    "timestamp": "2026-09-15"
+  },
+  {
+    "config_id": "FW-0002",
+    "category": "FIREWALL",
+    "parameters": {
+      "enabled": "no",
+      "default_policy": "ACCEPT",
+      "logging": "no",
+      "open_ports": "22,80,443"
+    },
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "Firewall disabled",
+      "Default ACCEPT policy (allow all)"
+    ],
+    "timestamp": "2026-02-08"
+  },
+  {
+    "config_id": "FW-0003",
+    "category": "FIREWALL",
+    "parameters": {
+      "enabled": "yes",
+      "default_policy": "ACCEPT",
+      "logging": "no",
+      "open_ports": "22,80,443,3306"
+    },
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Default ACCEPT policy (allow all)",
+      "Database port exposed publicly",
+      "Firewall logging disabled"
+    ],
+    "timestamp": "2026-04-03"
+  },
+  {
+    "config_id": "FW-0004",
+    "category": "FIREWALL",
+    "parameters": {
+      "enabled": "yes",
+      "default_policy": "DROP",
+      "logging": "no",
+      "open_ports": "22,80,443"
+    },
+    "is_vulnerable": true,
+    "severity": "LOW",
+    "vulnerabilities": [
+      "Firewall logging disabled"
+    ],
+    "timestamp": "2026-06-01"
+  },
+  {
+    "config_id": "FW-0005",
+    "category": "FIREWALL",
+    "parameters": {
+      "enabled": "yes",
+      "default_policy": "DROP",
+      "logging": "yes",
+      "open_ports": "22,80,443"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-10-18"
+  },
+  {
+    "config_id": "FW-0006",
+    "category": "FIREWALL",
+    "parameters": {
+      "enabled": "yes",
+      "default_policy": "DROP",
+      "logging": "yes",
+      "open_ports": "22,443"
+    },
+    "is_vulnerable": false,
+    "severity": "NONE",
+    "vulnerabilities": [],
+    "timestamp": "2026-04-19"
+  },
+  {
+    "config_id": "FW-0007",
+    "category": "FIREWALL",
+    "parameters": {
+      "enabled": "no",
+      "default_policy": "ACCEPT",
+      "logging": "no",
+      "open_ports": "22,23,80,443,3306"
+    },
+    "is_vulnerable": true,
+    "severity": "CRITICAL",
+    "vulnerabilities": [
+      "Firewall disabled",
+      "Default ACCEPT policy (allow all)",
+      "Telnet port open (unencrypted)",
+      "Database port exposed publicly"
+    ],
+    "timestamp": "2026-04-01"
+  },
+  {
+    "config_id": "FW-0008",
+    "category": "FIREWALL",
+    "parameters": {
+      "enabled": "yes",
+      "default_policy": "ACCEPT",
+      "logging": "yes",
+      "open_ports": "22,80,443,8080"
+    },
+    "is_vulnerable": true,
+    "severity": "HIGH",
+    "vulnerabilities": [
+      "Default ACCEPT policy (allow all)"
+    ],
+    "timestamp": "2026-02-23"
+  }
+]
